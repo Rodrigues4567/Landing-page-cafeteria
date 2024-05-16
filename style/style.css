@@ -23,6 +23,7 @@
 
 body {
     height: 100vh;
+    background-color: #000;
 }
 
 /************ HEADER ************/
@@ -86,7 +87,7 @@ body {
     display: none;
 }
 
-/************ HERO-SECTION ************/
+/************ HERO SECTION ************/
 
 .hero-section {
     display: flex;
@@ -97,6 +98,7 @@ body {
     background-size: cover;
     background-position: center center;
     height: 890px;
+    margin-bottom: 7rem;
 }
 
 .hero-section-container {
@@ -128,11 +130,78 @@ body {
     border: none;
     border-radius: 5px;
     font-size: 17px;
-    color: #ffffff;
+    color: #fff;
     cursor: pointer;
 }
 
 .hero-section-content button:hover {
+    background-color: #947a5b;
+    transition: 0.3s;
+}
+
+/************ SOBRE NÓS SECTION ************/
+
+.sobre-nos-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'font-bold', sans-serif;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sobre-nos-title span {
+    font-family: 'font-bold', sans-serif;
+    color: #ad8f6a;
+}
+
+.sobre-nos-content {
+    color: #fff;
+}
+
+.sobre-nos-desc-container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.sobre-nos-image {
+    width: 600px;
+}
+
+.sobre-nos-txt {
+    display: flex;
+    align-items: center;
+    background-color: #111319;
+    width: 490px;
+    padding: 1.5rem;
+}
+
+.sobre-nos-txt-container h3 {
+    font-family: 'font-bold', sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 14px;
+}
+
+.sobre-nos-txt-container p {
+    font-size: 17px;
+    margin-bottom: 11px;
+    font-family: 'font-light', sans-serif;
+    line-height: 28px;
+}
+
+.sobre-nos-txt-container button {
+    padding: 10px 18px;
+    margin-top: 10px;
+    background-color: #ad8f6a;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sobre-nos-txt-container button:hover {
     background-color: #947a5b;
     transition: 0.3s;
 }
@@ -155,9 +224,13 @@ body {
         padding-left: 5rem;
     }
 
+    .sobre-nos-image {
+        width: 450px;
+    }
+
 }
 
-/**************** MEDIA CELULAR ****************/
+/******************* MEDIA CELULAR *******************/
 
 @media screen and (max-width: 790px) {
 
@@ -203,6 +276,36 @@ body {
         line-height: 72px;
         margin-bottom: 5px;
         line-height: 68px;
+    }
+
+    /********** SOBRE NÓS SECTION **********/
+
+    .sobre-nos-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nos-desc-container {
+        flex-direction: column;
+        width: 90vw;
+        padding: 0px 0px;
+    }
+
+    .sobre-nos-image {
+        width: 90vw;
+    }
+    
+    .sobre-nos-txt {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 90vw;
+        padding: 1.1rem;
+    }
+
+    .sobre-nos-txt-container h3 {
+        font-size: 1.6rem;
     }
 
     /************ MENU MOBILE ABERTO ************/

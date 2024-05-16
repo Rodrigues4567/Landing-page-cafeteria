@@ -1,7 +1,8 @@
 
 const mobileButton = document.querySelector('.menu-burguer-link');
 
-mobileButton.addEventListener('click', menuShow = () => {
+mobileButton.addEventListener('click', menuShow = (e) => {
+    e.preventDefault();
     let menuMobile = document.querySelector('.menu-mobile');
 
     if (menuMobile.classList.contains('open')) {
