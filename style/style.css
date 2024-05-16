@@ -92,7 +92,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../imagens/home-img.jpg);
+    background-image: linear-gradient(#14141454, #14141454), url(../imagens/home-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -180,6 +180,29 @@ body {
 
     .nav {
         display: none;
+    }
+
+    /************ HERO-SECTION ************/
+
+    .hero-section {
+        background-position: center center;
+        height: 670px;
+    }
+
+    .hero-section-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .hero-section-content h1 {
+        font-size: 3rem;
+        line-height: 72px;
+        margin-bottom: 5px;
+        line-height: 68px;
     }
 
     /************ MENU MOBILE ABERTO ************/
