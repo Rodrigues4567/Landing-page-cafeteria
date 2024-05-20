@@ -141,6 +141,10 @@ body {
 
 /************ SOBRE NÓS SECTION ************/
 
+.sobre-nos-section {
+    margin-bottom: 8rem;
+}
+
 .sobre-nos-title {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -204,6 +208,50 @@ body {
 .sobre-nos-txt-container button:hover {
     background-color: #947a5b;
     transition: 0.3s;
+}
+
+/************ CARDS SECTION ************/
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards-section-title h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: 'font-bold', sans-serif;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cards-section-title span {
+    font-family: 'font-bold', sans-serif;
+    color: #ad8f6a;
+}
+
+.slide-container {
+    width: 1100px;
+    background-color: rgb(9, 150, 150);
+}
+
+.slide-content {
+    margin: 50px 22px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 280px;
+    padding: 1rem 10px;
+    border: solid 1px rgb(43, 43, 43);
+    color: #fff;
 }
 
 /**************** MEDIA NOTEBOOK ****************/
@@ -307,6 +355,8 @@ body {
     .sobre-nos-txt-container h3 {
         font-size: 1.6rem;
     }
+
+    /********** CARDS SECTION **********/
 
     /************ MENU MOBILE ABERTO ************/
 
