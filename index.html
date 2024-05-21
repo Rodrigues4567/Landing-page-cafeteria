@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cafeteria</title>
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
 
                 <nav class="nav">
                     <ul class="list-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#sobre-nos-section">Sobre</a></li>
+                        <li><a href="#cards-section">Menu</a></li>
                         <li><a href="#">Avaliações</a></li>
                         <li><a href="#">Endereço</a></li>
                     </ul>
@@ -36,9 +37,9 @@
             <div class="menu-mobile open">
                 <nav class="nav-mobile">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="#hero-section">Home</a></li>
+                        <li><a href="#sobre-nos-section">Sobre</a></li>
+                        <li><a href="#cards-section">Menu</a></li>
                         <li><a href="#">Avaliações</a></li>
                         <li><a href="#">Endereço</a></li>
                     </ul>
@@ -46,7 +47,7 @@
             </div>
         </header>
 
-        <section class="hero-section">
+        <section class="hero-section" id="hero-section">
             <div class="hero-section-container">
                 <div class="hero-section-content">
                     <h1>O melhor café da região</h1>
@@ -56,7 +57,7 @@
             </div>
         </section>
 
-        <section class="sobre-nos-section">
+        <section class="sobre-nos-section" id="sobre-nos-section">
             <div class="sobre-nos-content">
 
                 <h1 class="sobre-nos-title"><span>Sobre</span> nós</h1>
@@ -80,33 +81,97 @@
             </div>
         </section>
 
-        <section class="cards-section">
+        <section class="cards-section" id="cards-section">
 
             <div class="cards-section-title">
                 <h1>Nosso <span>menu</span></h1>
             </div>
 
-            <div class="slide-container">
+            <div class="slide-container swiper">
                 <div class="slide-content">
-                    <div class="card-wrapper">
+                    <div class="card-wrapper swiper-wrapper">
 
-                        <div class="card">
+                        <div class="card swiper-slide">
                             <div class="card-image">
                                 <img src="imagens/menu-1.png" alt="café">
                             </div>
 
                             <div class="card-content">
                                 <p class="card-name">Café Expresso</p>
-                                <p class="card-price">R$12.99</p>
+                                <p class="card-price">R$ 12.99</p>
+                                <button class="card-button">Fazer Pedido</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="imagens/menu-2.png" alt="café">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-name">Café Expresso</p>
+                                <p class="card-price">R$ 12.99</p>
+                                <button class="card-button">Fazer Pedido</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="imagens/menu-3.png" alt="café">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-name">Café Expresso</p>
+                                <p class="card-price">R$ 12.99</p>
+                                <button class="card-button">Fazer Pedido</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="imagens/menu-4.png" alt="café">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-name">Café Expresso</p>
+                                <p class="card-price">R$ 12.99</p>
+                                <button class="card-button">Fazer Pedido</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="imagens/menu-5.png" alt="café">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-name">Café Expresso</p>
+                                <p class="card-price">R$ 12.99</p>
+                                <button class="card-button">Fazer Pedido</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                            <div class="card-image">
+                                <img src="imagens/menu-6.png" alt="café">
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-name">Café Expresso</p>
+                                <p class="card-price">R$ 12.99</p>
                                 <button class="card-button">Fazer Pedido</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev swiper-nav-btn"></div>
+                <div class="swiper-button-next swiper-nav-btn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
     
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

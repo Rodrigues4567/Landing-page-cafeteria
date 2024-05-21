@@ -21,6 +21,10 @@
     font-family: 'padrao', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 100vh;
     background-color: #000;
@@ -221,7 +225,6 @@ body {
 
 .cards-section-title h1 {
     text-align: center;
-    margin-bottom: 1.5rem;
     font-family: 'font-bold', sans-serif;
     font-size: 2.1rem;
     text-transform: uppercase;
@@ -234,12 +237,11 @@ body {
 }
 
 .slide-container {
-    width: 1100px;
-    background-color: rgb(9, 150, 150);
+    width: 1120px;
 }
 
 .slide-content {
-    margin: 50px 22px;
+    margin: 16px 22px 50px 22px;
 }
 
 .card {
@@ -249,9 +251,57 @@ body {
     flex-direction: column;
     text-align: center;
     width: 280px;
-    padding: 1rem 10px;
+    padding: 1.7rem 5px;
     border: solid 1px rgb(43, 43, 43);
     color: #fff;
+}
+
+.card-image img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-name {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.card-price {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.card-button {
+    padding: 8px 16px;
+    background-color: #ad8f6a;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-button:hover {
+    background-color: #947a5b;
+    transition: 0.3s;
+}
+
+.swiper-nav-btn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.swiper-nav-btn::before,
+.swiper-nav-btn::after {
+    font-size: 18px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff;
 }
 
 /**************** MEDIA NOTEBOOK ****************/
@@ -274,6 +324,10 @@ body {
 
     .sobre-nos-image {
         width: 450px;
+    }
+
+    .slide-container {
+        width: 100%;
     }
 
 }
