@@ -337,6 +337,10 @@ body {
 
 /************ AVALIAÇÃO SECTION ************/
 
+.avaliacoes-section {
+    margin-bottom: 7rem;
+}
+
 .avaliacoes-tilte h1 {
     text-align: center;
     font-family: 'font-bold', sans-serif;
@@ -429,6 +433,56 @@ body {
     transform: scale(0.9);
 }
 
+/************ ENDEREÇO SECTION ************/
+
+.endereco-section {
+    margin-bottom: 6rem;
+}
+
+.endereco-title h1 {
+    text-align: center;
+    font-family: 'font-bold', sans-serif;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.endereco-title span {
+    font-family: 'font-bold', sans-serif;
+    color: #ad8f6a;
+}
+
+.map-contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map iframe {
+    width: 900px;
+    margin-bottom: 1.5rem;
+}
+
+.informacoes-endereco {
+    color: #fff;
+    border: solid 1px rgb(43, 43, 43);
+    padding: 1.5rem;
+    line-height: 28px;
+}
+
+.informacoes-endereco i {
+    margin-right: 6px;
+}
+
+/************ FOOTER ************/
+
+footer {
+    border-top: solid 1px rgb(43, 43, 43);
+    background-color: aqua;
+    text-align: center;
+}
+
 /**************** MEDIA NOTEBOOK ****************/
 
 @media screen and (max-width: 1300px) {
@@ -453,6 +507,10 @@ body {
 
     .slide-container {
         width: 100%;
+    }
+
+    .map iframe {
+        width: 90vw;
     }
 
 }
@@ -543,6 +601,12 @@ body {
     }
 
     .avaliacao-card {
+        width: 90vw;
+    }
+
+    /************ ENDEREÇO SECTION ************/
+
+    .informacoes-endereco {
         width: 90vw;
     }
 
