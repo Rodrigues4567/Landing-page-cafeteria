@@ -436,7 +436,7 @@ body {
 /************ ENDEREÇO SECTION ************/
 
 .endereco-section {
-    margin-bottom: 6rem;
+    margin-bottom: 9rem;
 }
 
 .endereco-title h1 {
@@ -479,8 +479,24 @@ body {
 
 footer {
     border-top: solid 1px rgb(43, 43, 43);
-    background-color: aqua;
+    background-color: #000;
     text-align: center;
+    padding: 3rem 1rem;
+}
+
+.footer-redes {
+    margin-bottom: 10px;
+}
+
+.footer-redes i {
+    font-size: 26px;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.p-footer {
+    color: #fff;
+    font-size: 15px;
 }
 
 /**************** MEDIA NOTEBOOK ****************/
