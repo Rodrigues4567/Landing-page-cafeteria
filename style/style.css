@@ -21,6 +21,20 @@
     font-family: 'padrao', sans-serif;
 }
 
+/*** EFEITO SCROLLREVEAL ***/
+
+.efeito-sobre-nos-section,
+.efeito-hero-section,
+.efeito-cards-section,
+.efeito-avaliacoes-section,
+.efeito-avaliacao-card1,
+.efeito-avaliacao-card2,
+.efeito-endereco-section {
+    visibility: hidden;
+}
+
+/**************************/
+
 html {
     scroll-behavior: smooth;
 }
